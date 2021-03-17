@@ -105,11 +105,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="curl_utils.cpp" />
     <QtRcc Include="RandomPics.qrc" />
     <QtUic Include="RandomPics.ui" />
     <QtMoc Include="RandomPics.h" />
     <ClCompile Include="RandomPics.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="curl_utils.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
