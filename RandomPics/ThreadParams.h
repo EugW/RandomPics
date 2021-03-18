@@ -12,4 +12,3 @@ public:
 	QLabel* progb;
 	QLabel* proge;
 };
-

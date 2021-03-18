@@ -10,6 +10,7 @@ RandomPics::RandomPics(QWidget *parent) : QMainWindow(parent) {
     this->setFixedSize(this->geometry().width(), this->geometry().height());
     connect(ui.pushButtonFetchDog, SIGNAL(clicked()), this, SLOT(handleButtonDog()));
     connect(ui.pushButtonFetchCat, SIGNAL(clicked()), this, SLOT(handleButtonCat()));
+    connect(ui.pushButtonBW, SIGNAL(clicked()), this, SLOT(handleButtonBW()));
 }
 
 DWORD WINAPI ParallelDownload(LPVOID lpParams) {
@@ -43,3 +44,8 @@ void RandomPics::handleButtonDog() {
 void RandomPics::handleButtonCat() {
     beginFetch("https://aws.random.cat/meow", "file");
 }
+
+void RandomPics::handleButtonBW() {
+    ui.label->setPixmap(QPixmap::fromImage(ui.label->pixmap().toImage().convertToFormat(QImage::Format_Grayscale16)));
+}
+

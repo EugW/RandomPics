@@ -13,6 +13,7 @@ public:
 private slots:
     void handleButtonDog();
     void handleButtonCat();
+    void handleButtonBW();
 private:
     Ui::RandomPicsClass ui;
 };
