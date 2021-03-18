@@ -11,6 +11,7 @@ RandomPics::RandomPics(QWidget *parent) : QMainWindow(parent) {
     connect(ui.pushButtonFetchDog, SIGNAL(clicked()), this, SLOT(handleButtonDog()));
     connect(ui.pushButtonFetchCat, SIGNAL(clicked()), this, SLOT(handleButtonCat()));
     connect(ui.pushButtonBW, SIGNAL(clicked()), this, SLOT(handleButtonBW()));
+    connect(ui.pushButtonRotate, SIGNAL(clicked()), this, SLOT(handleButtonRotate()));
 }
 
 DWORD WINAPI ParallelDownload(LPVOID lpParams) {
@@ -49,3 +50,6 @@ void RandomPics::handleButtonBW() {
     ui.label->setPixmap(QPixmap::fromImage(ui.label->pixmap().toImage().convertToFormat(QImage::Format_Grayscale16)));
 }
 
+void RandomPics::handleButtonRotate() {
+    ui.label->setPixmap(ui.label->pixmap().transformed(QTransform().rotate(90)));
+}

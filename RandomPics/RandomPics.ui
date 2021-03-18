@@ -108,6 +108,19 @@
      <string>Black'n'White</string>
     </property>
    </widget>
+   <widget class="QPushButton" name="pushButtonRotate">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>10</y>
+      <width>100</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Rotate</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">

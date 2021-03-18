@@ -14,6 +14,7 @@ private slots:
     void handleButtonDog();
     void handleButtonCat();
     void handleButtonBW();
+    void handleButtonRotate();
 private:
     Ui::RandomPicsClass ui;
 };
