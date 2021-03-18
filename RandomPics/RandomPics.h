@@ -10,10 +10,6 @@ class RandomPics : public QMainWindow
 public:
     RandomPics(QWidget *parent = Q_NULLPTR);
     void beginFetch(std::string src_url, std::string url_key);
-    std::string src_url;
-    std::string url_key;
-    void setImage(QImage src);
-    void setText(std::string txt);
 private slots:
     void handleButtonDog();
     void handleButtonCat();
