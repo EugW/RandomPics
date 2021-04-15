@@ -40,6 +40,7 @@ QImage fileRequest(std::string url, std::string ext, QLabel* prg, QLabel* prgb, 
     prge->setText("     ]");
     auto handler = curl_easy_init();
     curl_easy_setopt(handler, CURLOPT_URL, url.c_str());
+    curl_easy_setopt(handler, CURLOPT_TIMEOUT, 5L);
     curl_easy_setopt(handler, CURLOPT_WRITEFUNCTION, stringWriteFunction);
     curl_easy_setopt(handler, CURLOPT_XFERINFOFUNCTION, progress_callback);
     curl_easy_setopt(handler, CURLOPT_NOPROGRESS, 0L);

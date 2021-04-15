@@ -15,6 +15,8 @@ private slots:
     void handleButtonCat();
     void handleButtonBW();
     void handleButtonRotate();
+    void handleButtonSave();
 private:
+    bool isBusy = false;
     Ui::RandomPicsClass ui;
 };

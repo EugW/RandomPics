@@ -98,27 +98,52 @@
    <widget class="QPushButton" name="pushButtonBW">
     <property name="geometry">
      <rect>
-      <x>420</x>
+      <x>500</x>
       <y>10</y>
-      <width>100</width>
+      <width>25</width>
       <height>25</height>
      </rect>
     </property>
     <property name="text">
-     <string>Black'n'White</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../Downloads/black-and-white.svg</normaloff>../../../../Downloads/black-and-white.svg</iconset>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButtonRotate">
     <property name="geometry">
      <rect>
-      <x>310</x>
+      <x>470</x>
       <y>10</y>
-      <width>100</width>
+      <width>25</width>
       <height>25</height>
      </rect>
     </property>
     <property name="text">
-     <string>Rotate</string>
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../Downloads/iconfinder_button_rotate_352901.svg</normaloff>../../../../Downloads/iconfinder_button_rotate_352901.svg</iconset>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButtonSave">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>10</y>
+      <width>25</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../Downloads/Paomedia-Small-N-Flat-Floppy.svg</normaloff>../../../../Downloads/Paomedia-Small-N-Flat-Floppy.svg</iconset>
     </property>
    </widget>
   </widget>
